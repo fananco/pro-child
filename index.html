@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Pro_child</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: black;
+        color: #333;
+      }
+      header {
+        background: black;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      section {
+        padding: 40px 20px;
+        max-width: 900px;
+        margin: auto;
+  
+      }
+      .course {
+        background: orange;
+        padding: 20px;
+        margin-bottom: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      }
+      h2 {
+        color: black;
+      }
+      .features {
+        background:orange;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      footer {
+        text-align: center;
+        padding: 20px;
+        background: #292828;
+        color: white;
+      }
+      img, video {
+        max-width: 100%;
+        border-radius: 10px;
+        margin-top: 15px;
+      }
+      footer p a{
+          color: orangered;
+      }
+      ul{
+          color: black;
+          font-style: italic;
+          font-size: large;
+      }
+     section p{
+          color: black;
+          font-style: normal;
+          font-size: large;
+  
+     }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="#" class="logo"><img src="images/logo.jpeg" alt="Logo"></a>
+
+            <button class="menu-toggle" onclick="toggleMenu()" style="color: white;">☰</button>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Course</a></li>
+                    <li><a href="https://wa.link/58zymo">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="content">
+            <div class="text">
+                <h1>Pro_Child</h1><br>
+                <p><b>
+                    Welcome to the fun world of kids programming!<br>
+                    Kids coding course – let your children's imagination shape the future!<br>
+                    <span class="orange">Does your child want to create games, animations, or apps?</span><br>
+                    <span class="orangered">Are you looking for a fun way to develop their logical thinking and creativity?</span><br>
+                    <u class="red">This course is made just for them!</u></b>
+                </p>
+                <a class="btn" href="https://wa.link/58zymo">Apply Now</a>
+            </div>
+            <div class="image">
+                <img src="images/90.jpg" alt="Course Image">
+            </div>
+        </div>
+
+        <div class="icon">
+            <img onclick="photos(this.src)" src="images/90.jpg" alt="">
+            <img onclick="photos(this.src)" src="images/5.jpg" alt="">
+            <img onclick="photos(this.src)" src="images/6.jpg" alt="">
+            <img onclick="photos(this.src)" src="images/8.jpg" alt="">
+            <img onclick="photos(this.src)" src="images/scratch.jpg" alt="">
+        </div>
+    </div>
+    <section>
+        <header>
+            <h1>Welcome to Our Kids' Programming Courses!</h1>
+            <p><b> Fun & Educational Coding for Ages 8–15 </b></p>
+          </header>
+        
+          <section class="course">
+            <h2>👩‍💻 Course 1: Front-End Design for Kids</h2>
+            <h3><p>Learn to design websites using kid-friendly tools. At the end of the course, each student will build and publish their own website!</p></h3>
+            <ul>
+              <li>Age Group: 8–15 years</li>
+              <li>Tools: Online editors & visual design platforms</li>
+              <li>Project: Create and publish your own website</li>
+              <li>Mode: Online or Offline</li>
+              <li>Devices: Laptop or Mobile</li>
+            </ul>
+            <img src="images/2000.jpg" alt="Front-End Course Image">
+          </section>
+        
+          <section class="course">
+            <h2>🐍 Course 2: Learn Programming with Python & Scratch</h2>
+            <h3><p>Start programming with Scratch and Python! Kids will create fun games and interactive projects while learning programming logic.</p></h3>
+            <ul>
+              <li>Age Group: 8–15 years </li>
+              <li>Tools: Scratch, Python-based platforms </li>
+              <li>Projects: Games, animations, and more</li>
+              <li>Mode: Online or Offline</li>
+              <li>Devices: Laptop or Mobile</li>
+            </ul>
+            <img src="images/py1000.jpg" alt="Python Course Image">
+          </section>
+        
+          <section class="features">
+            <h2>🌟 Special Features</h2>
+            <ul>
+              <li>Private custom classes available</li>
+              <li>Includes promotional videos and helpful images</li>
+              <li>Interactive and project-based learning</li>
+              <li>Boost creativity and coding confidence</li>
+            </ul>
+           <img src="images/1000.jpg" alt="">
+          </section>
+        
+          <footer>
+            <p>© 2025 Kids Programming Academy. All rights reserved.
+                <br>contact with us <a href="https://wa.link/58zymo">Apply</a><br>
+                return to home <a href="index (1).html">Home</a><br>
+                <h3 style="color: red;"><a href="https://wa.link/58zymo" style="color: red; text-decoration: none;">Start Today </a></h3>
+            </p>
+            
+          </footer>
+    </section>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('nav-menu').classList.toggle('active');
+        }
+
+        function photos(src) {
+            document.querySelector('.image img').src = src;
+        }
+    </script>
+</body>
+</html>
